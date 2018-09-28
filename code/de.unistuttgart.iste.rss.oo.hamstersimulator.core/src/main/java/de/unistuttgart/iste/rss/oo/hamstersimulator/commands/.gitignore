@@ -1,0 +1,10 @@
+/Command.class
+/HamsterCommand.class
+/MoveCommand.class
+/TurnLeftCommand.class
+/PickGrainCommand.class
+/PutGrainCommand.class
+<<<<<<< Upstream, based on branch 'master' of ssh://git@git.rss.iste.uni-stuttgart.de:22222/Teaching/pse.git
+=======
+/CommandStack.class
+>>>>>>> 3d2e677 Refactored package names

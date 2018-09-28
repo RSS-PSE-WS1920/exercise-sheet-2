@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.unistuttgart.iste.rss.oo.hamstersimulator.ui.javafx.HamsterTerritoryGrid?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="root" minHeight="150.0" minWidth="200.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unistuttgart.iste.rss.oo.hamstersimulator.ui.javafx.GameSceneController">
+   <top>
+      <ToolBar fx:id="toolbar" prefHeight="30.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="play" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#startGame">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Play24.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pause" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#pauseGame" text="Button">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Pause24.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator orientation="VERTICAL" />
+            <Button fx:id="undo" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#undo" text="Button">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Undo24.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="redo" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#redo" text="Button">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Redo24.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator maxWidth="30.0" orientation="VERTICAL" prefWidth="30.0" />
+            <Slider fx:id="speed" max="10" min="1" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <SplitPane fx:id="splitPane" dividerPositions="0.5" BorderPane.alignment="CENTER">
+         <items>
+           	<HamsterTerritoryGrid fx:id="hamsterGrid" />
+           	<StackPane>
+            	<ListView fx:id="log" styleClass="game-log"/>
+            </StackPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>
