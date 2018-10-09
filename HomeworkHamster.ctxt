@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HomeworkHamster
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ HomeworkHamster.\n\ \n\ @author\ (Ihr\ Name)\ \n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\n
+comment1.params=
+comment1.target=HomeworkHamster()
+comment2.params=
+comment2.target=void\ run()
+comment2.text=\n\ Verwirrter\ Paule\!\n\ Helfe\ Paule\ um\ durch\ das\ Territorium\ zu\ laufen\ und\ alle\ K\u00F6rner\ in\ seine\ H\u00F6hle\ zu\ bringen\n\ Dabei\ soll\ Paule\ alle\ K\u00F6rner\ auf\ dem\ Feld\ aufsammeln\ und\ sie\ in\ seiner\ H\u00F6hle\ (rechts\ unten\n\ -\ 7x5)\ wieder\ ablegen.\ \n
+numComments=3
