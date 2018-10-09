@@ -1,11 +1,8 @@
 #BlueJ package file
-dependency1.from=HomeworkHamsterGame
-dependency1.to=HomeworkHamster
-dependency1.type=UsesDependency
 editor.fx.0.height=736
 editor.fx.0.width=1000
-editor.fx.0.x=1395
-editor.fx.0.y=291
+editor.fx.0.x=899
+editor.fx.0.y=407
 objectbench.height=106
 objectbench.width=776
 package.divider.horizontal=0.6
@@ -16,7 +13,7 @@ package.editor.x=93
 package.editor.y=104
 package.frame.height=600
 package.frame.width=800
-package.numDependencies=1
+package.numDependencies=0
 package.numTargets=3
 package.showExtends=true
 package.showUses=true

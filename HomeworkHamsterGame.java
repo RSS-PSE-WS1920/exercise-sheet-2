@@ -9,30 +9,29 @@ import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Territory;
 public class HomeworkHamsterGame extends SimpleHamsterGame
 { 
     HomeworkHamsterGame(){
-    game.initialize();
-    game.displayInNewGameWindow(); 
+        game.initialize();
+        game.displayInNewGameWindow();  
     }
-    
-    void testPaulesRun(){
-        
+
+    protected final void testPaulesSkills(){
         try {
             this.run();
         } catch (final RuntimeException e) {
             this.game.getInputInterface().showAlert(e);
         }
-        
-        this.stop();
-        
-        //runTest();
+
+        testAllGrainsInCave();
+        stop();
     }
 
-    private void runTest( ){
-        Territory territory = this.game.getTerritory();
-        //if(territory.getNumberOfGrainsAt(new Location(10, 5)) == territory.getTotalGrainCount()){
-        //    hamsterGame.paule.write("Wuhu geschaft");
-        //}else{
-        //    hamsterGame.paule.write("Oh nein! Das hat wohl nicht geklappt");
-        //}
+    private final void testAllGrainsInCave(){
+        Territory territory = game.getTerritory();
+        if(territory.getNumberOfGrainsAt(new Location(4, 6)) == territory.getTotalGrainCount() 
+        && paule.mouthEmpty()){
+            paule.write("Wuhu geschaft!");
+        }else{
+            paule.write("Oh nein! Das hat wohl nicht geklappt");
+        }
     }
-    
+
 }
