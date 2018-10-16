@@ -28,7 +28,7 @@ public class HomeworkHamsterGame extends SimpleHamsterGame
         Territory territory = game.getTerritory();
         if(territory.getNumberOfGrainsAt(new Location(4, 6)) == territory.getTotalGrainCount() 
         && paule.mouthEmpty()){
-            paule.write("Wuhu geschaft!");
+            paule.write("Wuhu geschafft!");
         }else{
             paule.write("Oh nein! Das hat wohl nicht geklappt");
         }
