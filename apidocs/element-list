@@ -1,0 +1,14 @@
+unnamed package
+de.unistuttgart.iste.rss.oo.hamstersimulator.commands
+de.unistuttgart.iste.rss.oo.hamstersimulator.datatypes
+de.unistuttgart.iste.rss.oo.hamstersimulator.example
+de.unistuttgart.iste.rss.oo.hamstersimulator.exceptions
+de.unistuttgart.iste.rss.oo.hamstersimulator.external.model
+de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model
+de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model.hamster
+de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model.hamster.command.specification
+de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model.territory
+de.unistuttgart.iste.rss.oo.hamstersimulator.internal.model.territory.command.specification
+de.unistuttgart.iste.rss.oo.hamstersimulator.properties
+de.unistuttgart.iste.rss.oo.hamstersimulator.ui.javafx
+de.unistuttgart.iste.rss.utils
