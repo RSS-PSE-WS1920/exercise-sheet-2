@@ -1,4 +1,7 @@
 import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Hamster;
+import java.io.IOException;
+import java.io.File;
+import java.io.*;
 /**
  * Beschreiben Sie hier die Klasse MyFirstSimpleHamster.
  * 
@@ -7,9 +10,24 @@ import de.unistuttgart.iste.rss.oo.hamstersimulator.external.model.Hamster;
  */
 public class ExerciseHamsterGame extends SimpleHamsterGame
 {
-    ExerciseHamsterGame(){
-        game.initialize();
-        game.displayInNewGameWindow();   
+    ExerciseHamsterGame(){  
+        File terFile = new File ("+libs/territories/example01.ter");
+            try(
+            InputStream targetStream = new FileInputStream(terFile);
+            ) {
+            game.initialize(targetStream);
+        } catch (IOException ex){
+            throw new RuntimeException(ex);
+        }
+        game.displayInNewGameWindow();
+    }
+    
+    void startGame(){
+        game.startGame(false);
+    }
+    
+    void stopGame(){
+        game.stopGame();
     }
 
     Hamster getHamster(){

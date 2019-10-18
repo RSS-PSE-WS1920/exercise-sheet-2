@@ -21,7 +21,7 @@ public class HomeworkHamsterGame extends SimpleHamsterGame
         }
 
         testAllGrainsInCave();
-        stop();
+        game.stopGame();
     }
 
     private final void testAllGrainsInCave(){
