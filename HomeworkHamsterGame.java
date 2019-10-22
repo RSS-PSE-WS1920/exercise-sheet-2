@@ -10,7 +10,7 @@ import java.io.*;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class HomeworkHamsterGame extends SimpleHamsterGame
+public abstract class HomeworkHamsterGame extends SimpleHamsterGame
 { 
     HomeworkHamsterGame(){
         File terFile = new File ("+libs/territories/example01.ter");
@@ -27,7 +27,7 @@ public class HomeworkHamsterGame extends SimpleHamsterGame
     protected final void testPaulesSkills(){
         game.startGame(false);
         try {
-            run();
+            hamsterRun();
         } catch (final RuntimeException e) {
             this.game.getInputInterface().showAlert(e);
         }
@@ -46,5 +46,6 @@ public class HomeworkHamsterGame extends SimpleHamsterGame
             paule.write("Oh nein! Das hat wohl nicht geklappt");
         }
     }
-
+    
+    abstract void hamsterRun();
 }

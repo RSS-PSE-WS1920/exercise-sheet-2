@@ -14,7 +14,7 @@ public class HomeworkHamster extends HomeworkHamsterGame{
      * - Spalte 6 * Zeile 4 bei 0 beginnend) wieder ablegen. 
      */
     @Override
-    protected void run(){
+    protected void hamsterRun(){
         paule.write("Ich weiß nicht wie :'(");
         // Helfe Paule dabei durch das Territorium zu laufen 
         // und alle Körner nachhause zu bringen
