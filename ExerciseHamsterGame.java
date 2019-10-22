@@ -22,14 +22,7 @@ public class ExerciseHamsterGame extends SimpleHamsterGame
         game.displayInNewGameWindow();
     }
     
-    void startGame(){
-        game.startGame(false);
-    }
-    
-    void stopGame(){
-        game.stopGame();
-    }
-
+   
     Hamster getHamster(){
         return paule;
     }
